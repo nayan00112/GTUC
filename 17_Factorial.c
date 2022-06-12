@@ -3,7 +3,7 @@ int factorial(int);
 int main()
 {
     int a, fact;
-    printf("Enter an Integer Number: ");
+    printf("Enter Positive Integer Number: ");
     scanf("%d", &a);
     fact = factorial(a);
     printf("Factoriyal is : %d", fact);
@@ -11,22 +11,31 @@ int main()
 
 int factorial(int i)
 {
-    if (i == 1){
+
+    if (i == 1 || i == 0)
+    {
         return 1;
     }
-    else{
+
+    else
+    {
         return i * factorial(i - 1);
     }
 }
 
-
 // Output:________________________________________________-
 
-// Enter an Integer Number: 4
+// Enter Positive Integer Number: 4
 // Factoriyal is : 24
 
-// Enter an Integer Number: 2
+// Enter Positive Integer Number: 2
 // Factoriyal is : 2
 
-// Enter an Integer Number: 6
+// Enter Positive Integer Number: 6
 // Factoriyal is : 720
+
+// Enter Positive Integer Number: 1
+// Factoriyal is : 1
+
+// Enter Positive Integer Number: 0
+// Factoriyal is : 1
