@@ -15,7 +15,7 @@ int main()
     }
     else
     {
-        printf("Given no. is Nagative.");
+        printf("Given no. is Negative.");
     }
     return 0;
 }
