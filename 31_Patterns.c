@@ -24,7 +24,7 @@ int main()
 
     for (int i = x + 5; i >= x; i--)
     {
-        for (int j = x; j < (x + 5) - (x - i + 5); j++)
+        for (int j = x; j < i; j++)
         {
             printf("%c", (char)x + (j - x));
         }
