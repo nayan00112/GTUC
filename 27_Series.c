@@ -7,12 +7,13 @@ int main()
     float sum = 0;
     printf("Enter Value of n: ");
     scanf("%d", &n);
+    (n == 0) ? (sum = 1) : (sum = 0);
 
     for (int i = 1; i <= n; i++)
     {
         sum += 1 / (float)fac(i);
     }
-printf("Sum is : %.4f", sum);
+    printf("Sum is : %.4f", sum);
     return 0;
 }
 
@@ -31,6 +32,7 @@ int fac(int i)
         return i * fac(i - 1);
     }
 }
+
 
 // Output:
 
