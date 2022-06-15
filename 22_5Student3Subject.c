@@ -61,3 +61,75 @@ Average Marks of Student have Roll No. 3 is 84.67.
 Average Marks of Student have Roll No. 4 is 84.67.
 Average Marks of Student have Roll No. 5 is 85.00.
 */
+
+
+
+
+
+
+//---------------------------------------------------------------------------
+
+
+
+
+
+/*
+
+#include <stdio.h>
+
+int main() {
+    int a[5][3];
+    float r = 0;
+    
+    for(int i = 0; i < 5; i++){
+        for(int j =0; j<3; j++){
+            printf("Student %d subject %d: ", i+1, j+1);
+            scanf("%d", &a[i][j]);
+        }
+        printf("\n");
+    }
+    
+    for(int i = 0; i < 3; i++){
+        for(int j =0; j<5; j++){
+         r = r + a[j][i];
+        }
+        printf ("\n");
+        printf("%d marks is %f\n", i+1, r);
+        printf("average marks is %f\n", r/5);
+      r = 0;  
+    }
+    return 0;
+}
+
+// Output:
+// Student 1 subject 1: 80
+// Student 1 subject 2: 90
+// Student 1 subject 3: 88
+
+// Student 2 subject 1: 78
+// Student 2 subject 2: 89
+// Student 2 subject 3: 97
+
+// Student 3 subject 1: 78
+// Student 3 subject 2: 77
+// Student 3 subject 3: 78
+
+// Student 4 subject 1: 90
+// Student 4 subject 2: 99
+// Student 4 subject 3: 98
+
+// Student 5 subject 1: 98
+// Student 5 subject 2: 82
+// Student 5 subject 3: 83
+
+
+// 1 marks is 424.000000
+// average marks is 84.800003
+
+// 2 marks is 437.000000
+// average marks is 87.400002
+
+// 3 marks is 444.000000
+// average marks is 88.800003
+
+*/
